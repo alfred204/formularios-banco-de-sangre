@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donante de Sangre</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<style>
+    body {
+        background-image: url('img/imagen2.jpg'); /* Reemplaza con la ruta correcta de tu imagen */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body>
+    
+    <div class="container">
+        <h2>Donante de Sangre</h2>
+        <form action="enviar_correo.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico:</label>
+            
+            
+            <input type="email" id="correo" name="correo" required>
+    
+        
+        </form>
+        <form action="procesar_formulario.php" method="post">
+          
+            <label for="nombre">Nombre del Donante:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="dui">DUI:</label>
+            <input type="text" id="dui" name="dui" placeholder="Ingrese su DUI" required>
+           
+            <label for="celular">Número de Celular:</label>
+            <input type="tel" id="celular" name="celular" placeholder="Ingrese su número de celular" required>
+
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">39 tipos de gays</option>
+            </select>
+
+            
+            <label for="grupo_sanguineo">Grupo Sanguíneo:</label>
+            <select id="grupo_sanguineo" name="grupo_sanguineo">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="nombre">Nombre completo del paciente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="fecha_donacion">Fecha de Donación:</label>
+            <input type="date" id="fecha_donacion" name="fecha_donacion" required>
+
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+</body>
+</html>
